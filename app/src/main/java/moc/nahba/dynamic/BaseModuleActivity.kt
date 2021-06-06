@@ -38,17 +38,11 @@ class BaseModuleActivity : AppCompatActivity() {
         splitInstallManager.registerListener(listener)
     }
 
-    private fun startOnDemand() {
+    private fun startOnDemand() {}
 
-    }
+    private fun startInstall() {}
 
-    private fun startInstall() {
-
-    }
-
-    private fun startSpecified() {
-
-    }
+    private fun startSpecified() {}
 
     private fun hasFeatureModuleInstalled(module: String) : Boolean
         = splitInstallManager.installedModules.contains(module)
